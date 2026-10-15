@@ -1,78 +1,60 @@
-# Supermart Grocery Sales Dashboard
+## 🚀 Live Demo
 
-An interactive data analytics dashboard built with **Python, Pandas, Streamlit and Plotly**, using the supplied Supermart Grocery Sales retail analytics dataset.
+Explore the interactive **Supermart Grocery Sales Dashboard** here:
 
-## Features
+🔗 [**Open Live Dashboard**](https://supermart-grocery-sales-dashboardcopybranch-epxrhzq67526fnmw5t.streamlit.app/)
 
-- KPI cards for total sales, total profit, unique orders, average sales per order and profit margin
-- Monthly sales and profit trends
-- Category and sub-category sales/profit analysis
-- High-sales category/sub-category combinations with profit context
-- Discount vs. profit scatter plot and profit by discount band
-- State-wise sales and profit
-- City-level sales, profit, order count and profit margin
-- Filters for date range, category, region and state
-- Filtered data table and CSV export
+## 📊 Project Features
 
-## Dataset
+- **Overall Sales Performance:** Total sales, total profit, unique orders, average sales per order, and profit margin.
+- **Monthly Trends:** Interactive charts for monthly sales and profit.
+- **Product Performance:** Sales and profit analysis by category and sub-category.
+- **Discount Analysis:** Explore the relationship between discounts and profit.
+- **Geographic Analysis:** Compare sales and profit across states and cities.
+- **Interactive Filters:** Filter data by date range, category, region, and state.
+- **CSV Export:** Download the filtered dataset for further analysis.
 
-The supplied CSV is stored at:
+## 🛠️ Technologies Used
 
-`data/Supermart Grocery Sales - Retail Analytics Dataset.csv`
+- Python
+- Streamlit
+- Pandas
+- Plotly
 
-The source dataset has 9,994 rows and 11 columns. The original project requirements are included in `Sapphire IQ Supermart Grocery Sales Dashboard.pdf`.
+## ▶️ Run Locally
 
-## Run locally
+1. Clone this repository:
 
-Python 3.10 or newer is recommended.
+   ```bash
+   git clone https://github.com/dineshpuvvala38-a11y/supermart-grocery-sales-dashboard.git
+   ```
 
-### Windows PowerShell
+2. Navigate to the project directory:
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
-```
+   ```bash
+   cd supermart-grocery-sales-dashboard
+   ```
 
-Open the local URL printed by Streamlit, typically `http://localhost:8501`.
+3. Install the required packages:
 
-If `python` is not recognized, install Python from https://www.python.org/downloads/ and enable **Add Python to PATH**, then reopen PowerShell.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Upload to GitHub
+4. Run the dashboard:
 
-1. Create a repository, e.g. `supermart-grocery-sales-dashboard`.
-2. Upload `app.py`, `README.md`, `requirements.txt`, `.gitignore`, the PDF and the `data` folder.
-3. Commit the changes.
-4. Keep the CSV in the `data` folder with its exact filename.
+   ```bash
+   streamlit run app.py
+   ```
 
-## Deploy online (optional)
+## 📁 Dataset
 
-Push the project to GitHub, then connect the repository through Streamlit Community Cloud. Set the main file path to `app.py` and deploy.
+This project uses the Supermart Grocery Sales - Retail Analytics Dataset to analyze sales, profitability, discounts, and geographic performance.
 
-## Metric definitions
+## 🎯 Project Objective
 
-- Total Sales: sum of `Sales` within the selected filters.
-- Total Profit: sum of `Profit` within the selected filters.
-- Unique Orders: count of distinct `Order ID`.
-- Average Sales / Order: total sales divided by distinct orders.
-- Profit Margin: total profit divided by total sales, multiplied by 100.
+To analyze grocery retail sales data and present actionable insights into sales trends, product performance, profitability, discount patterns, and geographic performance using an interactive dashboard.
 
-Discount-profit charts show observed associations in this dataset; they do not prove that discounts caused a profit change.
+---
 
-## Project structure
-
-```text
-supermart-grocery-sales-dashboard/
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── Sapphire IQ Supermart Grocery Sales Dashboard.pdf
-└── data/
-    └── Supermart Grocery Sales - Retail Analytics Dataset.csv
-```
-
-## Disclaimer
-
-Educational portfolio project using the user-provided dataset. It is not affiliated with a grocery retailer.
+**Developed as a data analytics portfolio project using Python and Streamlit.**
