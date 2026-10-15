@@ -7,7 +7,16 @@ st.set_page_config(page_title="Supermart Grocery Sales Dashboard", page_icon="ðŸ
 st.title("ðŸ›’ Supermart Grocery Sales Dashboard")
 st.caption("Interactive analysis of sales, profit, products, discounts and geographic performance")
 
-DATA_PATH = Path(__file__).parent / "data" / "Supermart Grocery Sales - Retail Analytics Dataset.csv"
+BASE_DIR = Path(__file__).parent
+CSV_NAME = "Supermart Grocery Sales - Retail Analytics Dataset.csv"
+
+DATA_PATH = BASE_DIR / "data" / CSV_NAME
+if not DATA_PATH.exists():
+    DATA_PATH = BASE_DIR / CSV_NAME
+
+if not DATA_PATH.exists():
+    st.error(f"Dataset not found: {CSV_NAME}")
+    st.stop()
 
 @st.cache_data
 def load_data():
